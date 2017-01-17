@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './components/button';
+import Progress from './components/progress';
 
 let Root = React.createClass({
 	componentDidMount() {
@@ -14,16 +14,20 @@ let Root = React.createClass({
 			useStateClassSkin: true
 		});
 		$("#player").bind($.jPlayer.event.timeupdate, (e) => {
-			console.log(e.jPlayer.status.currentTime);
+			this.setState({
+				progress: Math.round(e.jPlayer.status.currentTime)
+			});
 		});
+	},
+	componentWillUnmout() {
+		$("#player").unbind($.jPlayer.event.timeupdate);
 	},
 	getInitialState() {
 		return {		
-			count: 0
+			progress: 0
 		}
 	},
 	counterHandler() {
-		console.log('hello');
 		this.setState({
 			count: this.state.count + 1
 		});
@@ -31,8 +35,12 @@ let Root = React.createClass({
     render() {
         return (
             <div>
-                <p>hello world，welcome to the React lesson~</p>
-                <Button></Button>
+                <h1>Welcome to the React lesson~</h1>
+                <h3>Let us play music</h3>
+                <Progress
+					progress={this.state.progress}
+                >
+                </Progress>
             </div>
         );
     }
