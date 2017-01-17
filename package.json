@@ -17,10 +17,11 @@
   "author": "musiq",
   "license": "MIT",
   "dependencies": {
+    "pubsub-js": "^1.5.4",
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
     "react-hot-loader": "^3.0.0-beta.2",
-    "react-router": "^2.0.0"    
+    "react-router": "^2.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",

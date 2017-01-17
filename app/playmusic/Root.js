@@ -6,7 +6,7 @@ let Root = React.createClass({
 		$("#player").jPlayer({
 			ready: function () {
 				$(this).jPlayer("setMedia", {
-					mp3: "http://oj4t8z2d5.bkt.clouddn.com/%E8%8E%AB%E6%96%87%E8%94%9A-%E5%A4%96%E9%9D%A2%E7%9A%84%E4%B8%96%E7%95%8C.mp3"
+					mp3: "http://oj4t8z2d5.bkt.clouddn.com/%E9%AD%94%E9%AC%BC%E4%B8%AD%E7%9A%84%E5%A4%A9%E4%BD%BF.mp3"
 				}).jPlayer('play');
 			},
 			supplied: "mp3",
