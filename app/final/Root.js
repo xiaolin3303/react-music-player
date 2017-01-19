@@ -108,7 +108,7 @@ let App = React.createClass({
         return (
             <div className="container">
             	<Logo></Logo>
-            	{React.cloneElement(this.props.children, {musicList: this.state.musicList, currentMusitItem: this.state.currentMusitItem, repeatType: this.state.repeatType})}
+            	{React.cloneElement(this.props.children, this.state)}
             </div>
         );
     }
