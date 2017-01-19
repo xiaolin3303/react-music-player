@@ -1,6 +1,10 @@
 # react-music-player
 music player build with React
 
+### overview
+![](https://github.com/xiaolin3303/react-music-player/blob/master/overview/music-player.png?raw=true)
+![](https://github.com/xiaolin3303/react-music-player/blob/master/overview/music-list.png?raw=true)
+
 ### 如何运行
 
 **开发启动**
