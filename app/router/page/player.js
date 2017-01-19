@@ -1,5 +1,6 @@
 import React from 'react';
 import Progress from '../components/progress';
+import { Link } from 'react-router';
 
 let Player = React.createClass({
 	componentDidMount() {
@@ -21,6 +22,7 @@ let Player = React.createClass({
         return (
             <div>
                 <h1 className="mt20">Welcome to the React lesson~</h1>
+                <div className="mt20" style={{color: '#3aadff'}}><Link to="/list">See my music list</Link></div>
                 <h3 className="mt20"><span className="bold">{this.props.currentMusitItem.title}</span> 播放中...</h3>
                 <div className="mt20">
 	                <Progress

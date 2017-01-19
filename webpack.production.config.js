@@ -7,7 +7,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     // The entry file. All your app roots fromn here.
     entry: [
-        path.join(__dirname, 'app/index.js')
+        path.join(__dirname, 'app/final/index.js')
     ],
     // Where you want the output to go
     output: {
