@@ -13,7 +13,7 @@ let List = React.createClass({
     		);
     	});
         return (
-            <ul className="mt20">
+            <ul>
                 { Items }
             </ul>
         );
