@@ -1,7 +1,7 @@
 {
   "name": "react-music-player",
   "version": "1.0.0",
-  "description": "A boilerplate for playing around with react, redux and react-router with the help of webpack.",
+  "description": "music player build with react, redux and react-router with the help of webpack.",
   "main": "index.js",
   "scripts": {
     "test": "",
@@ -16,6 +16,10 @@
   ],
   "author": "musiq",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaolin3303/react-music-player"
+  },  
   "dependencies": {
     "pubsub-js": "^1.5.4",
     "react": "^15.0.2",

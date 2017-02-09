@@ -9,6 +9,7 @@ let List = React.createClass({
     			<ListItem
     				key={item.id}
     				data={item}
+                    focus={this.props.currentMusitItem === item}
     			></ListItem>
     		);
     	});
