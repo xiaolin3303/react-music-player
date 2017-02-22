@@ -8,8 +8,8 @@ let Progress = React.createClass({
 		}
 	},
 	changeProgress(e) {
-		let offset = this.refs.progressBar.getBoundingClientRect();
-		let progress = (e.pageX - offset.left) / offset.width;
+		let progressBar = this.refs.progressBar;
+		let progress = (e.pageX - progressBar.offsetLeft) / progressBar.clientWidth;
 		this.props.onProgressChange && this.props.onProgressChange(progress);
 	},
     render() {
