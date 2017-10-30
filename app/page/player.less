@@ -17,6 +17,11 @@
 			width: 180px;
 			height: 180px;
 			border-radius: 50%;
+			
+			&.playing {
+				animation: rotation 10s linear infinite;
+				-webkit-animation: rotation 10s linear infinite;
+			}
 		}
 	}
 	.volume-container {
@@ -61,5 +66,13 @@
     .volume-wrapper {
     	width: 60px;
     	display: inline-block;
-    }
+	}
+	@keyframes rotation{
+		from {transform: rotate(0deg);}
+		to {transform: rotate(360deg);}
+	}
+	@-webkit-keyframes rotation{
+		from {-webkit-transform: rotate(0deg);}
+		to {-webkit-transform: rotate(360deg);}
+	}
 }

@@ -10,7 +10,7 @@ module.exports = {
         'webpack-dev-server/client?http://localhost:3000',
         'webpack/hot/only-dev-server',
         'react-hot-loader/patch',
-        path.join(__dirname, 'app/final/index.js')
+        path.join(__dirname, 'app/index.js')
     ],
     output: {
         path: path.join(__dirname, '/dist/'),
@@ -23,18 +23,15 @@ module.exports = {
           inject: 'body',
           filename: './index.html'
         }),
-        new webpack.optimize.OccurenceOrderPlugin(),
+        new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin(),
+        new webpack.NoEmitOnErrorsPlugin(),
         new webpack.DefinePlugin({
           'process.env.NODE_ENV': JSON.stringify('development')
         })
     ],
-    module: {
-        resolve:{
-            extensions:['','.js','.json']
-        },        
-        loaders: [
+    module: {    
+        rules: [
             {
               test: /\.js$/,
               exclude: /node_modules/,

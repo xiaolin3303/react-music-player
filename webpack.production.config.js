@@ -5,9 +5,9 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    // The entry file. All your app roots fromn here.
+    // The entry file. All your app roots from here.
     entry: [
-        path.join(__dirname, 'app/final/index.js')
+        path.join(__dirname, 'app/index.js')
     ],
     // Where you want the output to go
     output: {
@@ -19,7 +19,7 @@ module.exports = {
         // webpack gives your modules and chunks ids to identify them. Webpack can vary the
         // distribution of the ids to get the smallest id length for often used ids with
         // this plugin
-        new webpack.optimize.OccurenceOrderPlugin(),
+        new webpack.optimize.OccurrenceOrderPlugin(),
 
         // handles creating an index.html file and injecting assets. necessary because assets
         // change name because the hash part changes. We want hash name changes to bust cache
@@ -66,8 +66,5 @@ module.exports = {
                 loader: 'style-loader!css-loader!less-loader'
             }
         ]
-    },
-    postcss: [
-        require('autoprefixer')
-    ]
+    }
 };

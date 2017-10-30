@@ -1,8 +1,8 @@
 {
-  "name": "react-music-player",
+  "name": "react-music-palyer",
   "version": "1.0.0",
-  "description": "music player build with react, redux and react-router with the help of webpack.",
-  "main": "index.js",
+  "description": "music player build by react",
+  "main": "app/index.js",
   "scripts": {
     "test": "",
     "start": "node server",
@@ -10,38 +10,36 @@
     "eslint": "eslint ."
   },
   "keywords": [
-    "es6",
+    "webpack",
     "react",
-    "redux"
+    "music-player"
   ],
-  "author": "musiq",
+  "author": "haibao",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xiaolin3303/react-music-player"
-  },  
   "dependencies": {
-    "pubsub-js": "^1.5.4",
-    "react": "^15.0.2",
-    "react-dom": "^15.0.2",
-    "react-hot-loader": "^3.0.0-beta.2",
-    "react-router": "^2.0.0"
+    "pubsub-js": "^1.5.7",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-hot-loader": "^3.1.1",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.6",
-    "babel-core": "^6.5.2",
-    "babel-loader": "^6.2.2",
-    "babel-plugin-react-transform": "^2.0.0",
-    "babel-preset-es2015": "^6.5.0",
-    "babel-preset-react": "^6.5.0",
-    "css-loader": "^0.23.1",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "html-webpack-plugin": "^2.16.1",
-    "json-loader": "^0.5.4",
-    "less": "^2.6.0",
-    "less-loader": "^2.2.2",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.13.0",
-    "webpack-dev-server": "^1.14.1"
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-react-transform": "^3.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "html-webpack-plugin": "^2.30.1",
+    "json-loader": "^0.5.7",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "path": "^0.12.7",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
   }
 }
