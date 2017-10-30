@@ -17,10 +17,17 @@
 			width: 180px;
 			height: 180px;
 			border-radius: 50%;
+			animation: rotation 10s linear infinite;
+			-webkit-animation: rotation 10s linear infinite;
 			
 			&.playing {
-				animation: rotation 10s linear infinite;
-				-webkit-animation: rotation 10s linear infinite;
+				-webkit-animation-play-state: running;
+				animation-play-state: running;
+			}
+
+			&.pausing {
+				-webkit-animation-play-state: paused;
+				animation-play-state: paused;
 			}
 		}
 	}
